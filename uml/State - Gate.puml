@@ -1,0 +1,12 @@
+@startuml
+ close : gate is close
+ open : gate is opene
+ opening : gate is opening
+ closing : gate is closing
+
+ [*] --> close
+ open --> closing : valid key
+ close --> opening : valid key
+ opening --> open : opening
+ closing --> close : closing
+@enduml
